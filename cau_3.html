@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cau 3</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let str1 = 'hi'
+    let str2 = 'hi viet nam'
+    let result = checkStr(str1, str2)
+
+    function checkStr(str1, str2) {
+        let arrStr = str2.split(' ')
+        console.log(arrStr)
+        let flag = false
+        for (let i = 0; i < arrStr.length; i++) {
+            if (str1 === arrStr[i]) {
+                flag = true
+            }
+        }
+        return flag
+    }
+
+    console.log(result)
+</script>

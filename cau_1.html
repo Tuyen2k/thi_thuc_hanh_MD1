@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cau 1</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let arrPoint = [1, 2, 8,9,8,1,10]
+    let temp;
+    let result = findPoint(arrPoint)
+
+    function findPoint(arr) {
+        for (let i = 0; i < arr.length; i++) {
+            for (let j = 0; j < arr.length; j++) {
+                if (arr[i] > arr[j]) {
+                    temp = arr[i]
+                    arr[i] = arr[j]
+                    arr[j] = temp
+                }
+            }
+        }
+        return arr[2]
+    }
+
+    console.log(result)
+</script>

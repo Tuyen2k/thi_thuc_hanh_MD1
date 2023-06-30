@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cau 2</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let arr = [2, 4, 1, 2, 100, 8, 5]
+    let index = 4
+    let arrNew = tryRemoveFromArray(arr, index)
+
+    function tryRemoveFromArray(array, id) {
+        for (let i = 0; i < array.length; i++) {
+            if (i === id) {
+                for (let i = id; i < array.length; i++) {
+                    array[i] = array[i + 1]
+                }
+            }
+        }
+        return array
+    }
+
+    document.write(arrNew)
+</script>
